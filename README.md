@@ -78,10 +78,10 @@ project(s) that you're inquiring about).
 
 The **settings** file in the FERC directory has the setting:
 ``` python
-DOWNLOAD_DELAY = 2
+DOWNLOAD_DELAY = 3
 ```
 By default this project is ethical towards the
-[FERC](https://elibrary.ferc.gov/idmws/search/fercgensearch.asp) servers - 2
+[FERC](https://elibrary.ferc.gov/idmws/search/fercgensearch.asp) servers - 3
 seconds is a good enough delay that shouldn't cause
 the servers to go down and consume much of processing power by overloading.
 [Scrapy](https://scrapy.org) will take this number and request pages at a delay
@@ -209,7 +209,7 @@ strings etc.)
 * Scrape responsibly and respectfully - if you actually end up costing a significant amount of money
 for server processing time you can be liable for the damages. Getting cease and desist letters
 is a potential scenario and they are much better than compensating for the damages.
-* Our default download delay is set to **3 seconds** - this will yield more than a half a GB
+* Our default download delay is set to **3 seconds** - this will yield roughly half a GB
 of documents in an hour. That's half a GB of PDF files, DOC files and images. It isn't
 likely that you're going to process all the documents in a day, don't bee greedy
 and opt in for longer or default delay, be realistic and respectful.
